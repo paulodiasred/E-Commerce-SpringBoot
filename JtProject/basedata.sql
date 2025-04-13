@@ -36,7 +36,7 @@ UNIQUE (username)
 # insert default customers
 INSERT INTO CUSTOMER(address, email, password, role, username) VALUES
                                                                    ('123, Albany Street', 'admin@nyan.cat', '123', 'ROLE_ADMIN', 'admin'),
-                                                                   ('765, 5th Avenue', 'lisa@gmail.com', '765', 'ROLE_NORMAL', 'lisa');
+                                                                   ('765, 5th Avenue', 'paulo@gmail.com', '765', 'ROLE_NORMAL', 'paulo');
 
 # create the product table
 CREATE TABLE IF NOT EXISTS PRODUCT(

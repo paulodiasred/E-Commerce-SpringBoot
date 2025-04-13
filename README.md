@@ -23,7 +23,7 @@ Projeto base para estudo de Spring Boot, MVC e Hibernate.
      * Username: `admin`
      * Password: `123`
    * Faça login como um usuário normal:
-     * Username: `lisa`
+     * Username: `paulo`
      * Password: `765`
 
 ### Banco de Dados
@@ -55,7 +55,7 @@ As views estão localizadas em `src/main/webapp/views`, mas, por algum motivo, o
 Quando você executar o projeto, as visualizações devem ser encontradas pelo Spring Boot e você deverá ver uma página de login em http://localhost:8080/ (se não estiver logado anteriormente)!
 
 # Fluxo de Trabalho
-- ![image](https://github.com/jaygajera17/E-commerce-project-springBoot/assets/81226571/69951cb7-65e2-4225-8681-2542859aaec6)
+- ![image](https://github.com/paulodiasred/E-Commerce-SpringBoot/blob/main/JtProject/src/main/resources/assets/image1.png)
 ### Controller
 - Controla o endpoint e também envia dados para a visualização (usamos o método ModelAndView).
 - ```public String adminlogin() {
@@ -93,7 +93,7 @@ Para mais informações, considere as seguintes seções:
 
 ## Visualização
 
-![image](https://github.com/jaygajera17/E-commerce-project-springBoot/assets/81226571/02a04d3c-1fc9-418c-b231-639f6525d07e)
-![image](https://github.com/jaygajera17/E-commerce-project-springBoot/assets/81226571/24c4451b-43a6-4c23-a78a-786eab4303b0)
-![image](https://github.com/jaygajera17/E-commerce-project-springBoot/assets/81226571/93c1baeb-326c-450f-867e-a883900a6644)
+![image](https://github.com/paulodiasred/E-Commerce-SpringBoot/blob/main/JtProject/src/main/resources/assets/image2.jpg)
+![image](https://github.com/paulodiasred/E-Commerce-SpringBoot/blob/main/JtProject/src/main/resources/assets/image3.jpg)
+![image](https://github.com/paulodiasred/E-Commerce-SpringBoot/blob/main/JtProject/src/main/resources/assets/image4.jpg)
 

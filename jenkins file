@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     environment {
-        PROJECT_NAME = "E-commerce-project-springBoot"
-        GITHUB_REPO_URL = "https://github.com/jaygajera17/E-commerce-project-springBoot.git"
+        PROJECT_NAME = "E-commerce-springBoot"
+        GITHUB_REPO_URL = "https://github.com/paulodiasred/E-Commerce-SpringBoot"
     }
 
     stages {
