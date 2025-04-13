@@ -58,10 +58,12 @@ Quando você executar o projeto, as visualizações devem ser encontradas pelo S
 - ![image](https://github.com/paulodiasred/E-Commerce-SpringBoot/blob/main/JtProject/src/main/resources/assets/image1.png)
 ### Controller
 - Controla o endpoint e também envia dados para a visualização (usamos o método ModelAndView).
-- ```public String adminlogin() {
+```
+public String adminlogin() {
 		
 		return "adminlogin";
-	}```
+}
+```
 - Sempre que a URL `/login` é acessada, o arquivo `adminlogin.jsp` em `src->main->webapp` é executado.
 ### Models
 - Representam dados como entidades e o relacionamento entre eles.
