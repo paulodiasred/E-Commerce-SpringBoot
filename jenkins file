@@ -1,0 +1,51 @@
+pipeline {
+    agent any
+
+    environment {
+        PROJECT_NAME = "E-commerce-project-springBoot"
+        GITHUB_REPO_URL = "https://github.com/jaygajera17/E-commerce-project-springBoot.git"
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                git url: "${GITHUB_REPO_URL}", branch: 'main'
+            }
+        }
+        
+        stage('Build') {
+            steps {
+                sh 'mvn clean package'
+            }
+        }
+        
+        stage('Test') {
+            steps {
+                sh 'mvn test'
+            }
+        }
+        
+        stage('Deploy') {
+            steps {
+                sh '''
+                echo "Deploying application..."
+                # Example command: copying the built JAR file to a remote server
+                # scp target/*.jar user@remote-server:/path/to/deployment/directory
+                '''
+            }
+        }
+    }
+    
+    post {
+        always {
+
+            cleanWs()
+        }
+        success {
+            echo 'Pipeline succeeded!'
+        }
+        failure {
+            echo 'Pipeline failed!'
+        }
+    }
+}
